@@ -1,9 +1,20 @@
 img {
   max-width: 100%;
+  border-radius: 5px;
 }
 
 body {
   padding: 0 1rem;
+  margin: 3rem auto;
+  max-width: 1000px;
+  font-family: "Open Sans", sans-serif;
+  color: rgb(61, 60, 60);
+}
+
+#sidebar {
+  background: lightgray;
+  border-radius: 5px;
+  padding: 1rem;
 }
 
 @media screen and (min-width: 37rem) {
