@@ -25,7 +25,7 @@ body {
 }
 
 #sidebar {
-  background: lightgray;
+  background: rgb(239, 239, 239);
   border-radius: 10px;
   padding: 2rem;
   text-align: center;
@@ -43,6 +43,7 @@ body {
   /* width: 90%; */
   display: block;
   margin: 1rem auto;
+  max-width: 12rem;
 }
 
 @media screen and (min-width: 35rem) {
