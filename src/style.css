@@ -20,8 +20,21 @@ body {
   color: rgb(61, 60, 60);
   line-height: 1.6;
   display: grid;
-  gap: 2rem;
+  column-gap: 2rem;
   font-size: 1.2rem;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  padding-left: 0;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+nav li {
+  margin-right: 1rem;
+  font-size: 1.1em;
 }
 
 #sidebar {
@@ -48,6 +61,21 @@ body {
 
 @media screen and (min-width: 35rem) {
   body {
+    grid-template-areas:
+      "sidebar header"
+      "sidebar main";
     grid-template-columns: 1fr 4fr;
+  }
+
+  #sidebar {
+    grid-area: sidebar;
+  }
+
+  main {
+    grid-area: main;
+  }
+
+  header {
+    grid-area: header;
   }
 }
