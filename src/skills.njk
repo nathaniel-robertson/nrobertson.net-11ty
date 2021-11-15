@@ -1,0 +1,20 @@
+---
+title: Skills & Experience
+layout: 'base.njk'
+---
+
+<h2>Skills</h2>
+
+{%- for post in collections.skills -%}
+<div class="skill">
+  <div class="skill__title">
+  {{ skills.data.title }}
+  </div>
+  <div class="skill__description">
+  {{ skills.data.description }}
+  <div>
+  <div class="skill__rating">
+  {{ skills.data.rating }}
+  </div>
+</div>
+{%- endfor -%}
